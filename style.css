@@ -1,0 +1,539 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+/* LOAD ANIMATION */
+#preloader {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+}
+
+#preloader img {
+    width: 30%;
+}
+
+
+.info-wrapper {
+    padding: 0;
+    margin: 0;
+}
+
+#container {
+    background-color: white;
+    min-height: 100vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 2%;
+    position: relative;
+    padding-bottom: 1%;
+    display: none;
+}
+
+.profile-box {
+    display: flex;
+    justify-content: center;
+}
+
+.profile-box img {
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.details-container {
+    padding-left: 0%;
+}
+
+.details-box {
+    display: flex;
+}
+
+.details-box p {
+    font-size: 30px;
+    padding-right: 4%;
+}
+
+.details-box button {
+    height: fit-content;
+    font-size: small;
+    margin-right: 1%;
+    margin-top: 1%;
+    font-weight: bold;
+}
+
+.icon-box {
+    margin-top: 12px;
+    margin-left: 1%;
+    cursor: pointer;
+}
+
+.icon-box span {
+    background-color: gray;
+    color: white;
+}
+
+#changeBG {
+    border-radius: 50%;
+    padding-right: 5%;
+}
+
+.details-info-box {
+    display: flex;
+}
+
+.details-info-box span {
+    font-weight: bold;
+}
+
+.details-info-content {
+    margin-right: 6%;
+    cursor: pointer;
+}
+
+.bio-box p {
+    margin-bottom: 0;
+    font-family: 'Poppins';
+    font-weight: bold;
+}
+
+.highlight-container {
+    padding: 4%;
+    padding-left: 6%;
+    display: flex;
+}
+
+.highlight-box {
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+}
+
+.highlight-box img {
+    border-radius: 50%;
+    width: 60%;
+    padding: 2%;
+    border: 2px solid gray;
+    cursor: pointer;
+}
+
+.navbar {
+    border-top: 1px solid rgb(194, 188, 188);
+    display: flex;
+    justify-content: center;
+    padding-top: 0;
+}
+
+.nav-selection {
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    margin-right: 4%;
+    padding-top: 2%;
+    padding-left: 1%;
+    padding-right: 1%;
+    cursor: pointer;
+
+}
+
+.nav-selection:first-child {
+    border-top: 1px solid black;
+}
+
+.nav-selection:first-child p,
+.nav-selection:first-child i {
+    color: black;
+}
+
+
+.nav-selection p {
+    font-family: 'Poppins';
+    font-size: small;
+    color: gray;
+}
+
+.nav-icon {
+    padding-right: 6%;
+    color: gray;
+}
+
+.content-container {
+    display: flex;
+    padding-bottom: 2%;
+    height: 100%;
+    margin-bottom: 4%;
+    width: 100%;
+    margin-left: 0;
+}
+
+.content-box {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    height: 350px;
+    margin-bottom: 2%;
+}
+
+.content-box img {
+    width: 90%;
+    height: 100%;
+    border-radius: 2%;
+}
+
+.content-box img:hover {
+    opacity: 50%;
+}
+
+.content-details-show {
+    position: absolute;
+    text-align: center;
+    bottom: 10%;
+    margin: 15%;
+    width: fit-content;
+    background: rgb(206, 207, 206);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.48);
+    padding: 4% ;
+}
+
+.content-details-show p {
+    font-size: small;
+    padding-bottom: 5%;
+}
+
+.content-details-show{
+    display: none;
+}
+
+.footer {
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.footer p {
+    color: gray;
+    font-size: small;
+}
+
+/* MOBILE DIV */
+.mobile-bio-box,
+.mobile-details-info-box {
+    display: none;
+}
+
+/* POP UP ABOUT ME */
+.toggleinfo {
+    display: none;
+}
+
+.about-header {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.about-header h4 {
+    padding-top: 2%;
+    font-weight: bold;
+}
+
+.about-header span {
+    position: absolute;
+    right: 1%;
+    top: 5%;
+    cursor: pointer;
+}
+
+.about-header span:hover {
+    border: 1px solid gray;
+}
+
+.aboutme-content {
+    width: 100%;
+    height: 100%;
+    padding-top: 2%;
+}
+
+.about-profile-box {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2%;
+}
+
+.about-profile-box img {
+    border-radius: 50%;
+    width: 30%;
+
+}
+
+.aboutmenu {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.aboutme-welcome p:last-child {
+    font-size: small;
+}
+
+.toggleinfo p {
+    font-size: small;
+}
+
+/* POP UP MYSOCIALS */
+.mysocials-header {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.mysocials-header h4 {
+    padding-top: 2%;
+    font-weight: bold;
+}
+
+.mysocials-header span {
+    position: absolute;
+    right: 1%;
+    top: 5%;
+    cursor: pointer;
+}
+
+.mysocials-header span:hover {
+    border: 1px solid gray;
+}
+
+.icon {
+    width: 100%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+.icon a {
+    text-decoration: none;
+    color: unset;
+}
+
+.icon i {
+    cursor: pointer;
+    padding: 4%;
+    background-color:aliceblue;
+    border-radius: 50%;
+}
+
+.icon:first-child i:hover {
+    background: #0165E1;
+    color: white;
+}
+
+.icon:nth-child(2) i:hover {
+    color: white;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+.icon:last-child i:hover{
+    background: gray;
+    color: white;
+}
+
+@media (max-width: 800px) {
+    .content-box {
+        height: 100%;
+    }
+    .content-box img {
+        min-width: 100%;
+        height: 180px;
+    }
+
+    .content-details-show a {
+        font-size: x-small
+    }
+
+    #container {
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 6%;
+    }
+
+    .content-details-show p {
+        font-size: xx-small;
+    }
+
+    .details-box {
+        display: block;
+    }
+
+    .profile-box {
+        width: 20%;
+        height: 25%;
+    }
+
+    .profile-box img {
+        width: 100px;
+    }
+
+    .icon-box {
+        width: fit-content;
+        position: absolute;
+        right: 34%;
+        top: 6%;
+    }
+
+    .details-info-box,
+    .bio-box {
+        display: none;
+    }
+
+    .details-box button {
+        font-size: x-small;
+    }
+
+    .details-box p {
+        padding-top: 4%;
+        font-size: x-large;
+    }
+
+    .mobile-bio-box {
+        display: block;
+        font-family: 'Poppins';
+        font-weight: bold;
+        font-size: small;
+        margin-top: 6%;
+        margin-bottom: 4%;
+        padding-left: 8%;
+
+    }
+
+    .mobile-bio-box p {
+        margin-bottom: 0;
+    }
+
+    .mobile-details-info-box {
+        display: flex;
+        border-top: 1px solid lightgray;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mobile-details-info-content {
+        text-align: center;
+        padding-top: 2%;
+        cursor: pointer;
+    }
+
+    .mobile-details-info-content span {
+        font-weight: bold;
+        font-size: small;
+    }
+
+    .mobile-details-info-content p {
+        font-size: small;
+    }
+
+    .navbar {
+        width: 100%;
+    }
+
+    .content-container {
+        padding-bottom: 50px;
+    }
+
+    .highlight-container {
+        padding-left: 2%;
+    }
+
+    .content-details-show {
+        border-radius: 2%;
+    }
+
+    .content-details-show p {
+        font-size: x-small;
+        margin-bottom: 0;
+    }
+
+    .content-details-show a {
+        font-size: xx-small;
+        padding: 4%;
+    }
+
+}
+
+@media (max-width: 400px) {
+    #container {
+        padding-top: 4%;
+    }
+
+    .icon-box {
+        right: 8%;
+        top: 0;
+    }
+
+    .profile-box {
+        margin-top: 4%;
+    }
+
+    .profile-box img {
+        width: 80px;
+    }
+
+    .details-box {
+        margin-top: 4%;
+    }
+
+    .details-box p {
+        font-size: x-large;
+        padding-top: 4%;
+    }
+
+    .details-box button {
+        font-size: x-small;
+        margin-top: 0;
+    }
+
+    .highlight-container {
+        margin-bottom: 6%;
+    }
+
+    .content-details-show p,
+    .content-details-show a {
+        font-size: .5em;
+    }
+
+    .content-box img {
+        width: 100%;
+        height: 160px;
+    }
+    .footer p {
+        padding-bottom: 2%;
+    }
+
+      /* POP UP MY SOCIALS */
+      .icon i{
+        font-size: xx-large;
+    }
+    .mysocials-content{
+        padding: 4%;
+    }
+    #mysocials-container{
+        padding: 8%;
+    }
+}

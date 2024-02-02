@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta name="description" content="Personal Portfolio">
+    <meta name="author" content="Ramilo Esquierra">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" href="img/logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="other.css">
+    <title>Ramilo Esquierra</title>
+</head>
+
+<body oncontextmenu="return false;">
+    <div class="preloader" id="preloader">
+        <img src="img/loading-cat.gif">
+    </div>
+
+    <div class="container-fluid main-container" id="container">
+        <div class="row info-wrapper">
+            <div class="col-4 profile-box">
+                <img class="changebgimg" src="img/profile.jpg">
+            </div>
+
+            <div class="col-8 details-container">
+                <div class="col details-box">
+                    <p class="changebg">miloeveryday2</p>
+                    <button class="btn btn-light viewprofileBtn">View profile</button>
+                    <button class="btn btn-primary messageBtn">Message</button>
+                    <div class="icon-box">
+                        <span class='bx bxs-moon bx-sm' id="changeBG"></span>
+                    </div>
+                </div>
+
+                <div class="col details-info-box changebg">
+                    <div class="details-info-content projects-menu ">
+                        <p><span>4</span> projects</p>
+                    </div>
+                    <div class="details-info-content" data-toggle="modal" data-target="#mysocials-container">
+                        <p><span>3</span> my socials</p>
+                    </div>
+                    <div class="details-info-content" data-toggle="modal" data-target="#aboutme-container">
+                        <p><span>5</span> about me</p>
+                    </div>
+                </div>
+
+                <div class="col bio-box changebg">
+                    <p>MILO</p>
+                    <p>Aspiring Full Stack Web Developer</p>
+                </div>
+
+            </div>
+            <div class="col-12 mobile-bio-box changebg">
+                <p>MILO</p>
+                <p>Aspiring Full Stack Web Developer</p>
+            </div>
+            <div class="col-12 highlight-container">
+                <div class="highlight-box">
+                    <img src="img/highlight1.jpg">
+                </div>
+                <div class="highlight-box">
+                    <img src="img/highlight2.jpg">
+                </div>
+                <div class="highlight-box">
+                    <img src="img/highlight3.jpg">
+                </div>
+                <div class="highlight-box">
+                    <img src="img/highlight4.jpg">
+                </div>
+
+            </div>
+            <div class="col-12 mobile-details-info-box changebg">
+                <div class="col-4 mobile-details-info-content projects-menu">
+                    <span>3</span>
+                    <p>projects</p>
+                </div>
+                <div class="col-4 mobile-details-info-content" data-toggle="modal" data-target="#mysocials-container">
+                    <span>3</span>
+                    <p>my socials</p>
+                </div>
+                <div class="col-4 mobile-details-info-content" data-toggle="modal" data-target="#aboutme-container">
+                    <span>5</span>
+                    <p>about me</p>
+                </div>
+            </div>
+
+            <div class="col-12 navbar">
+                <div class="nav-selection projects-menu">
+                    <div class="nav-icon">
+                        <i class='bx bx-save bx-xs'></i>
+                    </div>
+                    <p>PROJECTS</p>
+                </div>
+
+                <div class="nav-selection photos-menu">
+                    <div class="nav-icon">
+                        <i class='bx bx-images bx-xs'></i>
+                    </div>
+                    <p>PHOTOS</p>
+                </div>
+
+                <div class="nav-selection others-menu nav-active-menu">
+                    <div class="nav-icon">
+                        <i class='bx bx-layer-plus bx-xs changebg'></i>
+                    </div>
+                    <p class="changebg">OTHER</p>
+                </div>
+
+            </div>
+
+            <div class="row content-container">
+                <div class="no-content" data-aos="zoom-in">
+                    <i class='bx bx-layer-plus bx-lg changebg'></i>
+                    <p class="changebg">No Content</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-12 footer">
+            <p>&copy; <span class="footer-year"></span> Ramilo Esquierra</p>
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+    <!-- POP UP FOR MY SOCIAL ACC -->
+    <div class="modal fade" id="mysocials-container">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content popupBG">
+                <div class="mysocials-header">
+                    <h4>My Socials</h4>
+                    <span class='bx bx-x bx-sm' data-dismiss="modal"></span>
+                </div>
+                <div class="modal-body">
+                    <div class="row mysocials-content text-center">
+                        <div class="col-4 icon">
+                            <a href="https://www.facebook.com/esquierra.r" target="_blank"><i
+                                    class="fa-brands fa-facebook fa-3x icons"></i></a>
+                        </div>
+                        <div class="col-4 icon">
+                            <a href="https://www.instagram.com/miloeveryday2" target="_blank"> <i
+                                    class="fa-brands fa-instagram fa-3x icons"></i></a>
+                        </div>
+                        <div class="col-4 icon">
+                            <a href="https://github.com/miloymiloy" target="_blank"><i
+                                    class="fa-brands fa-github fa-3x icons"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- POP UP FOR ABOUT ME -->
+    <div class="modal fade" id="aboutme-container">
+        <div class="modal-dialog modal-dialog-centered ">
+            <div class="modal-content popupBG">
+                <div class="about-header">
+                    <h4>About Me</h4>
+                    <span class='bx bx-x bx-sm' data-dismiss="modal"></span>
+                </div>
+                <div class="modal-body">
+                    <div class="col-12 aboutme-content ">
+                        <div class="about-profile-box">
+                            <img class="changebgimg" src="img/profile.jpg">
+                        </div>
+                        <div class="aboutme-welcome text-center">
+                            <h5 class="greetchange"></h5>
+                            <p>I'm Ramilo Esquierra and WELCOME to my website.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, corrupti!</p>
+                        </div>
+                        <div class="titleabout text-center">
+                            <p class="aboutmenu">PERSONAL DETAILS</p>
+                            <div class="toggleinfo">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam doloremque quibusdam
+                                    sit, saepe ducimus vitae fugit incidunt veritatis eveniet, veniam nemo! Fugiat saepe
+                                    suscipit veniam id adipisci provident nostrum temporibus.</p>
+                            </div>
+                        </div>
+                        <div class="titleabout text-center">
+                            <p class="aboutmenu">EDUCATION</p>
+                            <div class="toggleinfo">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam doloremque quibusdam
+                                    sit, saepe ducimus vitae fugit incidunt veritatis eveniet, veniam nemo! Fugiat saepe
+                                    suscipit veniam id adipisci provident nostrum temporibus.</p>
+                            </div>
+                        </div>
+                        <div class="titleabout text-center">
+                            <p class="aboutmenu">HOBBIES</p>
+                            <div class="toggleinfo">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam doloremque quibusdam
+                                    sit, saepe ducimus vitae fugit incidunt veritatis eveniet, veniam nemo! Fugiat saepe
+                                    suscipit veniam id adipisci provident nostrum temporibus.</p>
+                            </div>
+                        </div>
+                        <div class="titleabout text-center">
+                            <p class="aboutmenu">OTHER</p>
+                            <div class="toggleinfo">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam doloremque quibusdam
+                                    sit, saepe ducimus vitae fugit incidunt veritatis eveniet, veniam nemo! Fugiat saepe
+                                    suscipit veniam id adipisci provident nostrum temporibus.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        AOS.refresh();
+    </script>
+    <script src="loading.js"></script>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
